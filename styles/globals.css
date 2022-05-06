@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* custom classaNames */
+@layer components {
+    .container-wrapper {
+        @apply h-screen py-4 px-6 md:py-[40px] md:px-[70px]
+    }
+}
