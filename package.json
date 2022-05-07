@@ -6,6 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@splidejs/react-splide": "^0.7.5",
+    "@splidejs/splide-extension-auto-scroll": "^0.4.2",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

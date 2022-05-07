@@ -88,6 +88,23 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@splidejs/react-splide@^0.7.5":
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/@splidejs/react-splide/-/react-splide-0.7.5.tgz#d645fbcb075f01468b7b8838d423f64c375e88a1"
+  integrity sha512-vsUyKE5GuXbj+zevI44PMh2MquEsmO28J9ififmoJHVZ3TF7WFcygLz5q9AFPUJvDjJngoPiM3S8b1WwvFxaFw==
+  dependencies:
+    "@splidejs/splide" "^4.0.1"
+
+"@splidejs/splide-extension-auto-scroll@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@splidejs/splide-extension-auto-scroll/-/splide-extension-auto-scroll-0.4.2.tgz#a1bdf4e986789d6edd7351ecbd2f634cda74d2a6"
+  integrity sha512-kIKRhs1Gj5a6xKEi/h/7i/G20+kJgpfzvU3nPyLrAUYdK3Q3w8kxJ4DgeMJHzlF5iachnPUe2zXdWMhZHCHYfg==
+
+"@splidejs/splide@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@splidejs/splide/-/splide-4.0.1.tgz#386244b028d3be413a30a8b4a90c7676948ba48b"
+  integrity sha512-fgiYX5xLwOFluKKiq9hde9V1tU6wFoTzznX4fOvok95GjEKq9WvkkKBS3/WCuMDn7LXvg/Qpo3Eq0m9QQEr8tA==
+
 "@types/node@17.0.4":
   version "17.0.4"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.4.tgz#fec0ce0526abb6062fd206d72a642811b887a111"

@@ -1,0 +1,22 @@
+<svg width="22" height="346" viewBox="0 0 22 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11" cy="11" r="7" fill="#286F6C"/>
+<circle cx="11" cy="11" r="10.5" stroke="black" stroke-linecap="round" stroke-dasharray="2 6 2 6"/>
+<circle cx="11" cy="65" r="7" fill="#EF694B"/>
+<circle cx="11" cy="65" r="10.5" stroke="black" stroke-linecap="round" stroke-dasharray="2 6 2 6"/>
+<line x1="11.5" y1="21" x2="11.5" y2="53" stroke="black" stroke-dasharray="2 2"/>
+<line x1="11.5" y1="77" x2="11.5" y2="109" stroke="black" stroke-dasharray="2 2"/>
+<circle cx="11" cy="119" r="7" fill="#EFB659"/>
+<circle cx="11" cy="119" r="10.5" stroke="black" stroke-linecap="round" stroke-dasharray="2 6 2 6"/>
+<circle cx="11" cy="173" r="7" fill="#6BC8E1"/>
+<circle cx="11" cy="173" r="10.5" stroke="black" stroke-linecap="round" stroke-dasharray="2 6 2 6"/>
+<line x1="11.5" y1="129" x2="11.5" y2="161" stroke="black" stroke-dasharray="2 2"/>
+<line x1="11.5" y1="185" x2="11.5" y2="217" stroke="black" stroke-dasharray="2 2"/>
+<circle cx="11" cy="227" r="7" fill="#286F6C"/>
+<circle cx="11" cy="227" r="10.5" stroke="black" stroke-linecap="round" stroke-dasharray="2 6 2 6"/>
+<circle cx="11" cy="281" r="7" fill="#EF694B"/>
+<circle cx="11" cy="281" r="10.5" stroke="black" stroke-linecap="round" stroke-dasharray="2 6 2 6"/>
+<line x1="11.5" y1="237" x2="11.5" y2="269" stroke="black" stroke-dasharray="2 2"/>
+<line x1="11.5" y1="293" x2="11.5" y2="325" stroke="black" stroke-dasharray="2 2"/>
+<circle cx="11" cy="335" r="7" fill="#6BC8E1"/>
+<circle cx="11" cy="335" r="10.5" stroke="black" stroke-linecap="round" stroke-dasharray="2 6 2 6"/>
+</svg>

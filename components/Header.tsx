@@ -2,8 +2,11 @@ import React from 'react'
 import Link from 'next/link'
 
 import HeaderLeft from '../components/HeaderLeft'
+import { useRouter } from 'next/router'
 
 function Header() {
+  const router = useRouter()
+
   return (
     <header>
       <img src="/pattern.svg" alt="pattern background" className='absolute top-0 right-0 w-[200px] md:w-[597.04px] -z-10'/>
@@ -18,27 +21,27 @@ function Header() {
         <ul className="md:flex md:items-center md:gap-6 hidden">
           <li>
             <Link href="/">
-              <a className='font-bold hover:text-base hover:underline hover:underline-offset-8 decoration-base'>welcome</a>
+              <a className={`font-bold hover:text-base hover:underline hover:underline-offset-8 decoration-base ${router.pathname == '/' && 'text-base underline underline-offset-8'}`}>welcome</a>
             </Link>
           </li>
           <li>
             <Link href="/profile">
-              <a className='font-bold hover:text-base hover:underline hover:underline-offset-8 decoration-base'>profile</a>
+              <a className={`font-bold hover:text-base hover:underline hover:underline-offset-8 decoration-base ${router.pathname == '/profile' && 'text-base underline underline-offset-8'}`}>profile</a>
             </Link>
           </li>
           <li>
             <Link href="/resume">
-              <a className='font-bold hover:text-base hover:underline hover:underline-offset-8 decoration-base'>resume</a>
+              <a className={`font-bold hover:text-base hover:underline hover:underline-offset-8 decoration-base ${router.pathname == '/resume' && 'text-base underline underline-offset-8'}`}>resume</a>
             </Link>
           </li>
           <li>
             <Link href="/portfolio">
-              <a className='font-bold hover:text-base hover:underline hover:underline-offset-8 decoration-base'>portfolio</a>
+              <a className={`font-bold hover:text-base hover:underline hover:underline-offset-8 decoration-base ${router.pathname == '/portfolio' && 'text-base underline underline-offset-8'}`}>portfolio</a>
             </Link>
           </li>
           <li>
             <Link href="/contact">
-              <a className='font-bold hover:text-base hover:underline hover:underline-offset-8 decoration-base'>contact</a>
+              <a className={`font-bold hover:text-base hover:underline hover:underline-offset-8 decoration-base ${router.pathname == '/contact' && 'text-base underline underline-offset-8'}`}>contact</a>
             </Link>
           </li>
         </ul>
