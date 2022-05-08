@@ -7,7 +7,7 @@ import '@splidejs/react-splide/css'
 function LatesWork() {
   return (
     <>
-      <h2 className="xl:text-5xl md:text-3xl text-2xl font-bold">Lates Work</h2>
+      <h2 className="text-2xl lg:text-3xl font-bold">Lates Work</h2>
       <Splide
         options={{
           type: 'loop',

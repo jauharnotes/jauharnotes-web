@@ -7,12 +7,19 @@ module.exports = {
     fontFamily: {
       'inter': ['Inter', 'sans-serif']
     },
-    colors: {
-      'base': '#286F6C',
-      'gray': '#EFEFEF',
-      'light-blue': '#6BC8E1'
+    extend: {
+      colors: {
+        'base': '#286F6C',
+        'gray': '#EFEFEF',
+        'light-blue': '#6BC8E1'
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
+      }
     },
-    extend: {},
   },
   plugins: [],
 }

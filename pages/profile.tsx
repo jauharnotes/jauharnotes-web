@@ -19,7 +19,7 @@ function Profile() {
 
   return (
     <Layout>
-      <div className="flex items-center lg:justify-around md:justify-center flex-wrap lg:flex-nowrap gap-8 md:gap-0 lg:mx-0 md:mx-20 mt-14 lg:ml-14">
+      <div className="mt-14 flex flex-wrap items-center gap-8 md:mx-20 md:justify-center md:gap-0 lg:mx-0 lg:ml-14 lg:flex-nowrap lg:justify-around">
         <div>
           <Image
             src="/profile-image.png"
@@ -28,14 +28,16 @@ function Profile() {
             height={542.16}
           />
         </div>
-        <div className='hidden lg:inline-block space-y-44'>
-                <div className='-rotate-90 hover:text-base hover:underline hover:underline-offset-4'>
-                    <Link href=''><a>client reviews</a></Link>
-                </div>
-                <hr className='rotate-90'/>
-            </div>
-        <div className='flex md:justify-center md:w-[700px] lg:w-auto'>
-        <ProfileSlide />
+        <div className="hidden space-y-44 lg:inline-block">
+          <div className="-rotate-90 hover:text-base hover:underline hover:underline-offset-4">
+            <Link href="">
+              <a>client reviews</a>
+            </Link>
+          </div>
+          <hr className="rotate-90" />
+        </div>
+        <div className="flex md:w-[700px] md:justify-center lg:w-auto">
+          <ProfileSlide />
         </div>
       </div>
     </Layout>

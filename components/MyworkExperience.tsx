@@ -3,7 +3,7 @@ import React from 'react'
 function MyworkExperience() {
   return (
     <>
-      <h2 className="text-center text-2xl md:text-5xl font-bold mb-5 md:mb-10 pt-14">My Work Experience</h2>
+      <h2 className="text-center text-2xl lg:text-3xl font-bold mb-5 md:mb-10 pt-14">My Work Experience</h2>
       <div className="flex md:justify-center lg:justify-between gap-2 lg:gap-14 md:gap-7 items-start">
         <div className='space-y-0 md:space-y-[105px]'>
           <div className='space-y-3 h-40 md:h-[58px] lg:h-auto'>

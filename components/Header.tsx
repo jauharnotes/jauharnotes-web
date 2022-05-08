@@ -10,9 +10,7 @@ function Header() {
   return (
     <header>
       <img src="/pattern.svg" alt="pattern background" className='absolute top-0 right-0 w-[200px] md:w-[597.04px] -z-10'/>
-       <div className='flex justify-center'>
-        <img src="/pattern-botton.svg" alt="pattern background botton" className='absolute bottom-0 -z-10'/>
-       </div>
+       
       <div className="flex justify-between relative">
         <div>
           <Link href="/"><a className='font-inter font-bold text-base text-[30px]'>johar.</a></Link>
@@ -108,6 +106,10 @@ function Header() {
       <div className='h-full flex items-end'>
         <HeaderLeft />
       </div>
+
+      <div className='flex justify-center'>
+        <img src="/pattern-botton.svg" alt="pattern background botton" className='hidden lg:inline-block absolute bottom-0 -z-10'/>
+       </div>
     </header>
   )
 }

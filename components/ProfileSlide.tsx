@@ -4,6 +4,7 @@ import React from 'react'
 import '@splidejs/react-splide/css';
 import Aboutme from './Aboutme';
 import MyworkExperience from './MyworkExperience';
+import Myhobbies from './Myhobbies';
 
 function ProfileSlide() {
   
@@ -21,6 +22,9 @@ function ProfileSlide() {
         </SplideSlide>
         <SplideSlide>
           <MyworkExperience />
+        </SplideSlide>
+        <SplideSlide>
+          <Myhobbies />
         </SplideSlide>
     </Splide>
   )
