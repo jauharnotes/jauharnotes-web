@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@splidejs/react-splide": "^0.7.5",
     "@splidejs/splide-extension-auto-scroll": "^0.4.2",
     "next": "latest",
