@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import Layout from '../components/Layout'
@@ -7,6 +8,9 @@ import MySkills from '../components/MySkills'
 function resume() {
   return (
     <Layout>
+      <Head>
+        <title>Resume &mdash; jauharnotes</title>
+      </Head>
       <div className="mt-20 flex flex-wrap justify-center gap-6 md:mx-14 lg:flex-nowrap">
         <div className="mt-6 flex w-full flex-row items-center justify-center">
           <Image

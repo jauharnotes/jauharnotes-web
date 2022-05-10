@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import Layout from '../components/Layout'
+import Head from 'next/head';
 
 function contact() {
   const form = useRef();
@@ -39,6 +40,9 @@ function contact() {
 
   return (
     <Layout>
+      <Head>
+        <title>Contact &mdash; jauharnotes</title>
+      </Head>
       <div className="flex flex-col items-center justify-center w-full mt-20 text-center">
         <h2 className='font-bold text-2xl lg:text-3xl'>Get in touch</h2>
         <p className='max-w-2xl leading-relaxed mt-4'>If you wanna get in touch, talk to me about a project collaboration or just say hi, fill up the awesome form below or send an email to jauharnotes@gmail.com and ~let's talk.</p>

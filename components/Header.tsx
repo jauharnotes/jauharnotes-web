@@ -13,7 +13,7 @@ function Header() {
        
       <div className="flex justify-between relative">
         <div>
-          <Link href="/"><a className='font-inter font-bold text-base text-[30px]'>johar.</a></Link>
+          <Link href="/"><a className='font-inter font-bold text-base text-[30px]'>jauhar.</a></Link>
         </div>
 
         <ul className="md:flex md:items-center md:gap-6 hidden">
@@ -73,7 +73,7 @@ function Header() {
               />
             </svg>
           </a>
-          <a href="" target='_blank'>
+          <a href="https://twitter.com/jauharuddin11" target='_blank'>
             <svg className='hover:scale-125 transition delay-100 duration-300 ease-in-out'
               width="25"
               height="25"

@@ -7,16 +7,16 @@ function MyworkExperience() {
       <div className="flex md:justify-center lg:justify-between gap-2 lg:gap-14 md:gap-7 items-start">
         <div className='space-y-0 md:space-y-[105px]'>
           <div className='space-y-3 h-40 md:h-[58px] lg:h-auto'>
-            <h2 className='font-semibold'>Self-Employed, Brisbone</h2>
-            <p className='text-[15px]'>Sep 2016 - Aug 2018</p>
+            <h2 className='font-semibold'>Awani Digital Printing</h2>
+            <p className='text-[15px]'>Sep 2017 - Aug 2019</p>
           </div>
           <div className='space-y-3 h-40 md:h-[58px] lg:h-auto'>
-            <h2 className='font-semibold'>New Mon Sevices</h2>
-            <p className='text-[15px]'>Jan 2018 - Mar 2020</p>
+            <h2 className='font-semibold'>CV Pandawa24 jam</h2>
+            <p className='text-[15px]'>Jan 2019 - Mar 2020</p>
           </div>
           <div className='space-y-3 h-40 md:h-[58px] lg:h-auto'>
-            <h2 className='font-semibold'>Global Solution</h2>
-            <p className='text-[15px]'>Feb 2020 - Mar 2021</p>
+            <h2 className='font-semibold'>Deso Studios</h2>
+            <p className='text-[15px]'>Apr 2020 - Jan 2022</p>
           </div>
         </div>
 
@@ -24,24 +24,21 @@ function MyworkExperience() {
 
         <div className='max-w-full space-y-4'>
           <div className='space-y-3 h-[145px]'>
-            <h2 className='font-semibold'>Visual Designer</h2>
+            <h2 className='font-semibold'>Graphic Designer</h2>
             <p className='flex text-[15px] md:max-w-xs'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
-              eu tempus bibendum accumsan enim vitae.
+              Created design, concepts, and sample layouts, based on knowledge of layout before printing process
             </p>
           </div>
           <div className='space-y-3 h-[145px]'>
-            <h2 className='font-semibold'>UI/UX Designer</h2>
+            <h2 className='font-semibold'>Graphic Designer</h2>
             <p className='flex text-[15px] md:max-w-xs'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
-              eu tempus bibendum accumsan enim vitae.
+            Created design, concepts, and sample layouts, based on knowledge of layout before printing process
             </p>
           </div>
           <div className='space-y-3 h-[145px]'>
             <h2 className='font-semibold'>Full Stack Developer</h2>
             <p className='flex text-[15px] md:max-w-xs'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
-              eu tempus bibendum accumsan enim vitae.
+              Developed a full-stack web application using stack ReactJs, VueJs, nodeJs, laravel, MySql, mongoDB
             </p>
           </div>
         </div>
