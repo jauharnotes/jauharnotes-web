@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import HeaderLeft from '../components/HeaderLeft'
 import { useRouter } from 'next/router'
+import ResponsiveMenu from './responsiveMenu'
 
 function Header() {
   const router = useRouter()
@@ -13,7 +14,7 @@ function Header() {
        
       <div className="flex justify-between relative">
         <div>
-          <Link href="/"><a className='font-inter font-bold text-base text-[30px]'>jauhar.</a></Link>
+          <Link href="/"><a className='font-inter font-bold text-base text-[30px] hidden md:flex'>jauhar.</a></Link>
         </div>
 
         <ul className="md:flex md:items-center md:gap-6 hidden">
@@ -43,6 +44,9 @@ function Header() {
             </Link>
           </li>
         </ul>
+
+        {/* responsive menu */}
+        <ResponsiveMenu />
 
         <div className="md:flex gap-3 hidden">
           <a href="https://www.instagram.com/jauhar_notes" target='_blank'>
