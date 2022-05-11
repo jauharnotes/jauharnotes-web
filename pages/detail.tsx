@@ -55,7 +55,7 @@ function detail() {
               </a>
             </div>
           </div>
-          <div className='h-[76vh] justify-center gap-4 lg:overflow-auto px-6'>
+          <div className='h-[76vh] justify-center gap-4 lg:overflow-auto scrollbar-hide hover:scrollbar-default px-6'>
             <DetailPorto link={data[0].link} img={data[0].img} />
             <TechnicalSheet />
           </div>

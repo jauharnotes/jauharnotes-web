@@ -21,7 +21,7 @@ function resume() {
             className="animate-[wiggle_2s_ease-in-out_infinite]"
           />
         </div>
-        <div className='lg:overflow-auto h-[76vh]'>
+        <div className='lg:overflow-auto scrollbar-hide hover:scrollbar-default h-[76vh]'>
           <div className="mt-6 flex w-full flex-row items-center justify-center">
             <MySkills />
           </div>

@@ -14,7 +14,7 @@ function portfolio() {
         <h2 className="mt-14 text-center text-2xl font-bold lg:text-3xl">
           My Portfolio
         </h2>
-        <div className="flex h-[76vh] flex-wrap justify-center gap-4 lg:overflow-auto pt-10">
+        <div className="flex h-[76vh] flex-wrap justify-center gap-4 lg:overflow-auto scrollbar-hide hover:scrollbar-default pt-10">
           {data.map((item: any) => (
             <PortoImage key={item.id} img={item.img} link={item.link} />
           ))}
