@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import HeaderLeft from '../components/HeaderLeft'
 import { useRouter } from 'next/router'
-import ResponsiveMenu from './responsiveMenu'
+import ResponsiveMenu from './ResponsiveMenu'
 
 function Header() {
   const router = useRouter()
