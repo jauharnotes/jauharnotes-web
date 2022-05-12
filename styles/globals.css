@@ -68,3 +68,67 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+.nav__menu {
+  display: flex;
+  /* flex-direction: column;
+  align-items: flex-end; */
+}
+
+/* .nav__menu ul {
+  list-style-type: none;
+  margin-top: 50px;
+} */
+
+.nav__menu li {
+  /* display: inline-block; */
+  position: relative;
+  /* font-weight: bold; */
+}
+
+.nav__menu li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #286F6C;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.color li:after {
+  background-color: #F5F6F6;
+}
+
+.nav__menu li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* type effect */
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #286F6C; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #286F6C; }
+}

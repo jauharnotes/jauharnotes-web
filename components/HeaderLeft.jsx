@@ -3,7 +3,7 @@ import React from 'react'
 
 function HeaderLeft() {
   return (
-    <nav className='hidden md:flex absolute bottom-0 mb-44'>
+    <nav className='hidden md:flex absolute bottom-0 left-0 mb-44'>
         <ul className='flex flex-col items-center space-y-[130px] -ml-10'>
             <li className='transform -rotate-90 mb-20'>
                 <a href='https://github.com/jauharnotes' target='_blank' className='font-bold hover:text-base hover:underline hover:underline-offset-8'>my open source projects</a>

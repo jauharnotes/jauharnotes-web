@@ -25,10 +25,10 @@ function Welcome() {
           </div>
           <hr className="rotate-90" />
         </div>
-        <div className="h-auto w-[900px] space-y-9 text-center sm:text-center lg:text-left">
+        <div className="h-auto w-[900px] flex-col items-start space-y-9 text-center sm:text-center lg:text-left">
           <h2 className="text-2xl font-bold">Hello, I&apos;am</h2>
           <h1 className="text-5xl font-bold">Jauharuddin</h1>
-          <p className="text-2xl font-light">FRONT-END DEVELOPER</p>
+          <p className="text-2xl font-light max-w-sm lg:text-left inline-block typewriter">FRONT-END DEVELOPER</p>
           <p className="text-xl">
             A professional front-end developer from Jakarta, Indonesia. I always
             give the best effort for each projects I did. I give a solution with

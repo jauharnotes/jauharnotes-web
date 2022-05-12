@@ -12,38 +12,40 @@ function Header() {
     <header>
       <img src="/pattern.svg" alt="pattern background" className='absolute top-0 right-0 w-[200px] md:w-[597.04px] -z-10'/>
        
-      <div className="flex justify-between relative">
+      <div className="flex justify-between items-center relative">
         <div>
-          <Link href="/"><a className='font-inter font-bold text-base text-[30px] hidden md:flex'>jauhar.</a></Link>
+          <Link href="/"><a className='font-bold text-lg text-base text-[30px] hidden md:flex'>jauhar.</a></Link>
         </div>
 
-        <ul className="md:flex md:items-center md:gap-6 hidden">
+        <div className='nav__menu'>
+        <ul className="md:flex md:items-center space-x-3 lg:space-x-7 hidden">
           <li>
             <Link href="/">
-              <a className={`font-bold hover:text-base hover:underline hover:underline-offset-8 decoration-base ${router.pathname == '/' && 'text-base underline underline-offset-8'}`}>welcome</a>
+              <a className={`font-bold text-lg hover:text-base  decoration-base ${router.pathname == '/' && 'text-base underline underline-offset-4'}`}>welcome</a>
             </Link>
           </li>
           <li>
             <Link href="/profile">
-              <a className={`font-bold hover:text-base hover:underline hover:underline-offset-8 decoration-base ${router.pathname == '/profile' && 'text-base underline underline-offset-8'}`}>profile</a>
+              <a className={`font-bold text-lg hover:text-base  decoration-base ${router.pathname == '/profile' && 'text-base underline underline-offset-4'}`}>profile</a>
             </Link>
           </li>
           <li>
             <Link href="/resume">
-              <a className={`font-bold hover:text-base hover:underline hover:underline-offset-8 decoration-base ${router.pathname == '/resume' && 'text-base underline underline-offset-8'}`}>resume</a>
+              <a className={`font-bold text-lg hover:text-base decoration-base ${router.pathname == '/resume' && 'text-base underline underline-offset-4'}`}>resume</a>
             </Link>
           </li>
           <li>
             <Link href="/portfolio">
-              <a className={`font-bold hover:text-base hover:underline hover:underline-offset-8 decoration-base ${router.pathname == '/portfolio' && 'text-base underline underline-offset-8'}`}>portfolio</a>
+              <a className={`font-bold text-lg hover:text-base  decoration-base ${router.pathname == '/portfolio' && 'text-base underline underline-offset-4'}`}>portfolio</a>
             </Link>
           </li>
           <li>
             <Link href="/contact">
-              <a className={`font-bold hover:text-base hover:underline hover:underline-offset-8 decoration-base ${router.pathname == '/contact' && 'text-base underline underline-offset-8'}`}>contact</a>
+              <a className={`font-bold text-lg hover:text-base  decoration-base ${router.pathname == '/contact' && 'text-base underline underline-offset-4'}`}>contact</a>
             </Link>
           </li>
         </ul>
+        </div>
 
         {/* responsive menu */}
         <ResponsiveMenu />

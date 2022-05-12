@@ -14,14 +14,14 @@ function ResponsiveMenu() {
           toggle ? 'w-full' : 'left-full'
         }`}
       >
-        <div className="flex-col items-center justify-center">
+        <div className="flex-col items-center justify-center nav__menu color">
           <ul className="flex-col items-center space-y-28 text-center">
             <li>
               <Link href="/">
                 <a
-                  className={`decoration-whitetext-white font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white hover:underline hover:underline-offset-8 ${
+                  className={`decoration-whitetext-white text-xl font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white ${
                     router.pathname == '/' &&
-                    'text-white underline underline-offset-8'
+                    'text-white underline underline-offset-4'
                   }`}
                 >
                   welcome
@@ -31,9 +31,9 @@ function ResponsiveMenu() {
             <li>
               <Link href="/profile">
                 <a
-                  className={`decoration-whitetext-white font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white hover:underline hover:underline-offset-8 ${
+                  className={`decoration-whitetext-white text-xl font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white ${
                     router.pathname == '/profile' &&
-                    'text-white underline underline-offset-8'
+                    'text-white underline underline-offset-4'
                   }`}
                 >
                   profile
@@ -43,9 +43,9 @@ function ResponsiveMenu() {
             <li>
               <Link href="/resume">
                 <a
-                  className={`decoration-whitetext-white font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white hover:underline hover:underline-offset-8 ${
+                  className={`decoration-whitetext-white text-xl font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white ${
                     router.pathname == '/resume' &&
-                    'text-white underline underline-offset-8'
+                    'text-white underline underline-offset-4'
                   }`}
                 >
                   resume
@@ -55,9 +55,9 @@ function ResponsiveMenu() {
             <li>
               <Link href="/portfolio">
                 <a
-                  className={`decoration-whitetext-white font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white hover:underline hover:underline-offset-8 ${
+                  className={`decoration-whitetext-white text-xl font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white ${
                     router.pathname == '/portfolio' &&
-                    'text-white underline underline-offset-8'
+                    'text-white underline underline-offset-4'
                   }`}
                 >
                   portfolio
@@ -67,9 +67,9 @@ function ResponsiveMenu() {
             <li>
               <Link href="/contact">
                 <a
-                  className={`decoration-whitetext-white font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white hover:underline hover:underline-offset-8 ${
+                  className={`decoration-whitetext-white text-xl font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white ${
                     router.pathname == '/contact' &&
-                    'text-white underline underline-offset-8'
+                    'text-white underline underline-offset-4'
                   }`}
                 >
                   contact
