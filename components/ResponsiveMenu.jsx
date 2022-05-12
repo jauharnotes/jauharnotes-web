@@ -15,11 +15,11 @@ function ResponsiveMenu() {
         }`}
       >
         <div className="flex-col items-center justify-center nav__menu color">
-          <ul className="flex-col items-center space-y-28 text-center">
+          <ul className="flex-col items-center space-y-12 py-5 text-center">
             <li>
               <Link href="/">
                 <a
-                  className={`decoration text-xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
+                  className={`decoration text-3xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
                     router.pathname == '/' &&
                     'text-white underline underline-offset-4'
                   }`}
@@ -31,7 +31,7 @@ function ResponsiveMenu() {
             <li>
               <Link href="/profile">
                 <a
-                  className={`decoration text-xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
+                  className={`decoration text-3xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
                     router.pathname == '/profile' &&
                     'text-white underline underline-offset-4'
                   }`}
@@ -43,7 +43,7 @@ function ResponsiveMenu() {
             <li>
               <Link href="/resume">
                 <a
-                  className={`decoration text-xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
+                  className={`decoration text-3xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
                     router.pathname == '/resume' &&
                     'text-white underline underline-offset-4'
                   }`}
@@ -55,7 +55,7 @@ function ResponsiveMenu() {
             <li>
               <Link href="/portfolio">
                 <a
-                  className={`decoration text-xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
+                  className={`decoration text-3xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
                     router.pathname == '/portfolio' &&
                     'text-white underline underline-offset-4'
                   }`}
@@ -67,7 +67,7 @@ function ResponsiveMenu() {
             <li>
               <Link href="/contact">
                 <a
-                  className={`decoration text-xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
+                  className={`decoration text-3xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
                     router.pathname == '/contact' &&
                     'text-white underline underline-offset-4'
                   }`}
