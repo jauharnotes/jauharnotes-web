@@ -7,7 +7,7 @@ import { data } from '../data'
 function detail() {
   return (
     <Layout>
-      <div className="flex h-[750px] items-center justify-center">
+      <div className="flex h-[750px] items-center justify-center mt-10">
         <div className="w-full flex-col items-center justify-center text-center md:px-[120px]">
           <div className="mt-7 flex w-full items-center justify-between px-4 py-2">
             <a
