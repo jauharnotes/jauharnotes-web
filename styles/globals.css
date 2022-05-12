@@ -99,7 +99,7 @@ body {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 1px;
+  height: 2px;
   bottom: 0;
   left: 0;
   background-color: #286F6C;
@@ -107,9 +107,9 @@ body {
   transition: transform 0.25s ease-out;
 }
 
-/* .color li:after {
+.color li:after {
   background-color: #F5F6F6;
-} */
+}
 
 .nav__menu li:hover:after {
     transform: scaleX(1);

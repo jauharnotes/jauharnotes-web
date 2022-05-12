@@ -10,7 +10,7 @@ function ResponsiveMenu() {
     <>
       {/* canvas */}
       <div
-        className={`fixed -top-0 z-10 flex h-full items-center justify-center backdrop-blur-xl transition-all delay-150 ease-out ${
+        className={`fixed -top-0 z-10 flex h-full items-center justify-center bg-base transition-all delay-150 ease-out ${
           toggle ? 'w-full' : 'left-full'
         }`}
       >
@@ -19,7 +19,7 @@ function ResponsiveMenu() {
             <li>
               <Link href="/">
                 <a
-                  className={`decoration text-3xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
+                  className={`decoration text-3xl font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white ${
                     router.pathname == '/' &&
                     'text-white underline underline-offset-4'
                   }`}
@@ -31,7 +31,7 @@ function ResponsiveMenu() {
             <li>
               <Link href="/profile">
                 <a
-                  className={`decoration text-3xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
+                  className={`decoration text-3xl font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white ${
                     router.pathname == '/profile' &&
                     'text-white underline underline-offset-4'
                   }`}
@@ -43,7 +43,7 @@ function ResponsiveMenu() {
             <li>
               <Link href="/resume">
                 <a
-                  className={`decoration text-3xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
+                  className={`decoration text-3xl font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white ${
                     router.pathname == '/resume' &&
                     'text-white underline underline-offset-4'
                   }`}
@@ -55,7 +55,7 @@ function ResponsiveMenu() {
             <li>
               <Link href="/portfolio">
                 <a
-                  className={`decoration text-3xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
+                  className={`decoration text-3xl font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white ${
                     router.pathname == '/portfolio' &&
                     'text-white underline underline-offset-4'
                   }`}
@@ -67,7 +67,7 @@ function ResponsiveMenu() {
             <li>
               <Link href="/contact">
                 <a
-                  className={`decoration text-3xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
+                  className={`decoration text-3xl font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white ${
                     router.pathname == '/contact' &&
                     'text-white underline underline-offset-4'
                   }`}
@@ -94,20 +94,20 @@ function ResponsiveMenu() {
             className="cursor-pointer space-y-1 border-none bg-transparent outline-none"
           >
             <span
-              className={`block h-1 w-7 rounded-md transition-all delay-150 ease-out bg-base ${
-                toggle ? 'translate-y-[8px] rotate-[45deg]' : ''
+              className={`block h-1 w-7 rounded-md transition-all delay-150 ease-out ${
+                toggle ? 'translate-y-[8px] rotate-[45deg] bg-slate-300' : 'bg-base'
               }`}
             ></span>
             <span
-              className={`block h-1 w-7 rounded-md transition-all delay-150 ease-out bg-base ${
-                toggle ? 'opacity-0' : ''
+              className={`block h-1 w-7 rounded-md transition-all delay-150 ease-out ${
+                toggle ? 'opacity-0' : 'bg-base'
               }`}
             ></span>
             <span
-              className={`block h-1 w-7 rounded-md transition-all delay-150 ease-out bg-base ${
+              className={`block h-1 w-7 rounded-md transition-all delay-150 ease-out ${
                 toggle
-                  ? 'translate-y-[-8px] rotate-[-45deg]'
-                  : ''
+                  ? 'translate-y-[-8px] rotate-[-45deg] bg-slate-300'
+                  : 'bg-base'
               }`}
             ></span>
           </button>
