@@ -31,6 +31,14 @@
   background: #8f8f8f; 
 }
 
+p,h1,h3,a,hr {
+  color: #8F9BAE;
+}
+
+h2 {
+  color: #3C2344;
+}
+
 body {
   background-color: #F5F6F6;
 }
@@ -99,9 +107,9 @@ body {
   transition: transform 0.25s ease-out;
 }
 
-.color li:after {
+/* .color li:after {
   background-color: #F5F6F6;
-}
+} */
 
 .nav__menu li:hover:after {
     transform: scaleX(1);

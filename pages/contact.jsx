@@ -57,7 +57,7 @@ function contact() {
             <p className="invisible peer-invalid:visible text-pink-600 text-sm">
               Please provide a valid email address.</p>
             <textarea name="message" id="message" cols={30} rows={10} placeholder='Your Message...' value={message} onChange={handleMessage} className='px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500'/>
-            <input type='submit' value='Send' className="flex justify-around items-center gap-3 bg-base hover:bg-[#094B49] active:bg-[#04302e] focus:outline-none focus:ring focus:ring-[#055e59] px-3 py-2 rounded-md font-bold text-white w-72"/>
+            <input type='submit' value='Send' className="flex justify-around items-center gap-3 cursor-pointer bg-base hover:bg-[#094B49] active:bg-[#04302e] focus:outline-none focus:ring focus:ring-[#055e59] px-3 py-2 rounded-md font-bold text-white w-72"/>
           </form>
         </div> : <div className='w-full flex justify-center items-center'><img src='/success_celebration.gif' alt='animation' className='h-60 w-auto'/></div>
         }

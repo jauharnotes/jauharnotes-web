@@ -12,7 +12,7 @@ function detail() {
           <div className="mt-7 flex w-full items-center justify-between px-4 py-2">
             <a
               href="#"
-              className="font-bold flex items-center gap-3 rounded-md bg-base px-6 py-2 text-xs text-slate-300 transition-all duration-200 ease-out hover:scale-x-110 hover:bg-[#094B49] md:text-sm"
+              className="font-bold flex items-center gap-3 rounded-md bg-base px-6 py-2 text-xs text-white transition-all duration-200 ease-out hover:scale-x-110 hover:bg-[#094B49] md:text-sm"
             >
               <svg
                 width="30"

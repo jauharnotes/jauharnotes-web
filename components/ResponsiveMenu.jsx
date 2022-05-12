@@ -10,7 +10,7 @@ function ResponsiveMenu() {
     <>
       {/* canvas */}
       <div
-        className={`fixed -top-0 z-10 flex h-full items-center justify-center bg-base transition-all delay-150 ease-out ${
+        className={`fixed -top-0 z-10 flex h-full items-center justify-center backdrop-blur-xl transition-all delay-150 ease-out ${
           toggle ? 'w-full' : 'left-full'
         }`}
       >
@@ -19,7 +19,7 @@ function ResponsiveMenu() {
             <li>
               <Link href="/">
                 <a
-                  className={`decoration-whitetext-white text-xl font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white ${
+                  className={`decoration text-xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
                     router.pathname == '/' &&
                     'text-white underline underline-offset-4'
                   }`}
@@ -31,7 +31,7 @@ function ResponsiveMenu() {
             <li>
               <Link href="/profile">
                 <a
-                  className={`decoration-whitetext-white text-xl font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white ${
+                  className={`decoration text-xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
                     router.pathname == '/profile' &&
                     'text-white underline underline-offset-4'
                   }`}
@@ -43,7 +43,7 @@ function ResponsiveMenu() {
             <li>
               <Link href="/resume">
                 <a
-                  className={`decoration-whitetext-white text-xl font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white ${
+                  className={`decoration text-xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
                     router.pathname == '/resume' &&
                     'text-white underline underline-offset-4'
                   }`}
@@ -55,7 +55,7 @@ function ResponsiveMenu() {
             <li>
               <Link href="/portfolio">
                 <a
-                  className={`decoration-whitetext-white text-xl font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white ${
+                  className={`decoration text-xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
                     router.pathname == '/portfolio' &&
                     'text-white underline underline-offset-4'
                   }`}
@@ -67,7 +67,7 @@ function ResponsiveMenu() {
             <li>
               <Link href="/contact">
                 <a
-                  className={`decoration-whitetext-white text-xl font-bold text-slate-300 transition-all delay-100 duration-300 hover:text-white ${
+                  className={`decoration text-xl font-bold text-base transition-all delay-100 duration-300 hover:text-[#094B49] ${
                     router.pathname == '/contact' &&
                     'text-white underline underline-offset-4'
                   }`}
@@ -86,28 +86,28 @@ function ResponsiveMenu() {
       >
         <div className="flex w-full items-center justify-between">
           {/* <p>Johar</p> */}
-          <Link href='/'>
-            <a className="ml-10 font-inter text-[23px] font-bold hover:text-[#12413e]">Jauhar.</a>
+            <Link href='/'>
+              <a className='ml-10 font-inter text-[23px] text-base font-bold hover:text-[#12413e]'>Jauhar.</a>
           </Link>
           <button
             onClick={() => setToggle((prev) => !prev)}
             className="cursor-pointer space-y-1 border-none bg-transparent outline-none"
           >
             <span
-              className={`block h-1 w-7 rounded-md transition-all delay-150 ease-out ${
-                toggle ? 'translate-y-[8px] rotate-[45deg] bg-white' : 'bg-base'
+              className={`block h-1 w-7 rounded-md transition-all delay-150 ease-out bg-base ${
+                toggle ? 'translate-y-[8px] rotate-[45deg]' : ''
               }`}
             ></span>
             <span
-              className={`block h-1 w-7 rounded-md transition-all delay-150 ease-out ${
-                toggle ? 'opacity-0' : 'bg-base'
+              className={`block h-1 w-7 rounded-md transition-all delay-150 ease-out bg-base ${
+                toggle ? 'opacity-0' : ''
               }`}
             ></span>
             <span
-              className={`block h-1 w-7 rounded-md transition-all delay-150 ease-out ${
+              className={`block h-1 w-7 rounded-md transition-all delay-150 ease-out bg-base ${
                 toggle
-                  ? 'translate-y-[-8px] rotate-[-45deg] bg-white'
-                  : 'bg-base'
+                  ? 'translate-y-[-8px] rotate-[-45deg]'
+                  : ''
               }`}
             ></span>
           </button>
