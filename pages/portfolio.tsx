@@ -11,7 +11,7 @@ function portfolio() {
         <title>Portfolio &mdash; jauharnotes</title>
       </Head>
       <div className="px-6">
-        <h2 className="mt-14 text-center text-2xl font-bold lg:text-3xl">
+        <h2 className="mt-14 text-center text-2xl font-bold lg:text-3xl mb-4">
           My Portfolio
         </h2>
         <div className="flex h-[76vh] flex-wrap justify-center gap-4 lg:overflow-auto scrollbar-hide hover:scrollbar-default pt-10">
