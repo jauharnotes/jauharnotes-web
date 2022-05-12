@@ -87,7 +87,7 @@ function ResponsiveMenu() {
         <div className="flex w-full items-center justify-between">
           {/* <p>Johar</p> */}
             <Link href='/'>
-              <a className='ml-10 font-inter text-[23px] text-base font-bold hover:text-[#12413e]'>Jauhar.</a>
+              <a className={`ml-10 font-inter text-[23px] font-bold  ${toggle ? 'text-slate-300 hover:text-white' : 'text-base hover:text-[#12413e'}]`}>Jauhar.</a>
           </Link>
           <button
             onClick={() => setToggle((prev) => !prev)}
