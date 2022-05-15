@@ -26,7 +26,7 @@ function Welcome() {
             height="682"
           />
         </div>
-        <div className="hidden space-y-24 lg:inline-block">
+        <div className="hidden space-y-24 lg:inline-block my-auto">
           <p className="vertical-lr">Tech Enthusiast</p>
           <hr className="vertical-lr border-[0.1px] h-[200px] mx-auto" />
         </div>

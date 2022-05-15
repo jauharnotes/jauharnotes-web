@@ -9,7 +9,7 @@ import Link from 'next/link'
 function LatesWork() {
   const [page, setPage] = useState(4)
   const { height, width } = useWindowDimension()
-  
+
   useEffect(() => {
     if (width < 760) {
       setPage(3)
