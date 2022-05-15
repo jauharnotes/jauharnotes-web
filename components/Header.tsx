@@ -4,6 +4,7 @@ import Link from 'next/link'
 import HeaderLeft from '../components/HeaderLeft'
 import { useRouter } from 'next/router'
 import ResponsiveMenu from './ResponsiveMenu'
+import Layout from './Layout'
 
 function Header() {
   const router = useRouter()
@@ -109,10 +110,7 @@ function Header() {
           </a>
         </div>
       </div>
-      <div className='h-full flex items-end'>
-        <HeaderLeft />
-      </div>
-
+          <HeaderLeft />
       <div className='flex justify-center'>
         <img src="/pattern-botton.svg" alt="pattern background botton" className='hidden lg:inline-block absolute bottom-0 -z-10'/>
        </div>

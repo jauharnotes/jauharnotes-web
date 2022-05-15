@@ -18,7 +18,7 @@ function Welcome() {
         initial={{ opacity: 0 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
-        className="mt-7 flex flex-wrap items-center justify-center gap-10 md:mt-[90px] lg:flex-nowrap">
+        className="mt-7 flex flex-wrap items-start justify-center gap-10 md:mt-[90px] lg:flex-nowrap">
         <div className="flex items-center justify-between md:ml-14">
           <Image
             src="/welcome-image.png"
@@ -26,11 +26,9 @@ function Welcome() {
             height="682"
           />
         </div>
-        <div className="hidden space-y-44 lg:inline-block">
-          <div className="-rotate-90">
-            <p>Tech Enthusiast</p>
-          </div>
-          <hr className="rotate-90" />
+        <div className="hidden space-y-24 lg:inline-block">
+          <p className="vertical-lr">Tech Enthusiast</p>
+          <hr className="vertical-lr border-[0.1px] h-[200px] mx-auto" />
         </div>
         <div className="h-auto w-[900px] flex-col items-start space-y-9 text-center sm:text-center lg:text-left">
           <h2 className="text-2xl font-bold text-[#3C2344]">Hello, I&apos;am</h2>
@@ -49,7 +47,7 @@ function Welcome() {
               <a className='text-white'>contact me</a>
             </Link>
           </button>
-          <div className="flex-row">
+          <div className="flex-row absolute">
             <LatesWork />
           </div>
         </div>

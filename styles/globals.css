@@ -9,6 +9,11 @@
     }
 }
 
+.vertical-lr {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 20px;
