@@ -33,7 +33,7 @@ function LatesWork() {
       </Splide>
 
       <Link href='/portfolio'>
-        <a className='text-base font-bold hover:text-[#094B49] mt-3'>View all</a>
+        <a className='text-base font-bold hover:text-[#094B49] mt-3 pb-14'>View all</a>
       </Link>
     </>
   )

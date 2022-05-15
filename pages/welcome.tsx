@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 import LatesWork from '../components/LatesWork'
 import Layout from '../components/Layout'
+import { AnimatePresence, motion } from 'framer-motion'
 
 function Welcome() {
   return (
@@ -11,7 +12,13 @@ function Welcome() {
       <Head>
         <title>Home &mdash; jauharnotes</title>
       </Head>
-      <div className="mt-7 flex flex-wrap items-center justify-center gap-10 md:mt-[90px] lg:flex-nowrap">
+      <AnimatePresence exitBeforeEnter>
+      <motion.div
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        className="mt-7 flex flex-wrap items-center justify-center gap-10 md:mt-[90px] lg:flex-nowrap">
         <div className="flex items-center justify-between md:ml-14">
           <Image
             src="/welcome-image.png"
@@ -42,11 +49,12 @@ function Welcome() {
               <a className='text-white'>contact me</a>
             </Link>
           </button>
-          <div className="flex-row ">
+          <div className="flex-row">
             <LatesWork />
           </div>
         </div>
-      </div>
+      </motion.div>
+      </AnimatePresence>
     </Layout>
   )
 }

@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import Layout from '../components/Layout'
 import Head from 'next/head';
+import { AnimatePresence, motion } from 'framer-motion'
 
 function contact() {
   const form = useRef();
@@ -43,6 +44,13 @@ function contact() {
       <Head>
         <title>Contact &mdash; jauharnotes</title>
       </Head>
+      <AnimatePresence exitBeforeEnter>
+      <motion.div
+         animate={{ opacity: 1 }}
+         initial={{ opacity: 0 }}
+         exit={{ opacity: 0 }}
+         transition={{ duration: 0.5 }}
+      >
       <div className="flex flex-col items-center justify-center w-full mt-20 text-center">
         <h2 className='font-bold text-2xl lg:text-3xl'>Get in touch</h2>
         <p className='max-w-2xl leading-relaxed mt-4'>If you wanna get in touch, talk to me about a project collaboration or just say hi, fill up the awesome form below or send an email to jauharnotes@gmail.com and ~let's talk.</p>
@@ -68,7 +76,9 @@ function contact() {
           <h2 className='uppercase font-bold mt-6 mb-2'>Depok - Jawa Barat, Indonesia</h2>
           <p>Jl. Karya Bakti 3  RT 02/01 Beji Depok</p>
         </div>
-      </div>
+        </div>
+      </motion.div>
+      </AnimatePresence>
     </Layout>
   )
 }

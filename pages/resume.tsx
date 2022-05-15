@@ -4,6 +4,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import MyServices from '../components/MyServices'
 import MySkills from '../components/MySkills'
+import { AnimatePresence, motion } from 'framer-motion'
 
 function resume() {
   return (
@@ -11,7 +12,13 @@ function resume() {
       <Head>
         <title>Resume &mdash; jauharnotes</title>
       </Head>
-      <div className="mt-20 flex flex-wrap justify-center gap-6 md:mx-14 lg:flex-nowrap">
+      <AnimatePresence exitBeforeEnter>
+      <motion.div
+         animate={{ opacity: 1 }}
+         initial={{ opacity: 0 }}
+         exit={{ opacity: 0 }}
+         transition={{ duration: 0.5 }}
+        className="mt-20 flex flex-wrap justify-center gap-6 md:mx-14 lg:flex-nowrap">
         <div className="mt-6 flex w-full flex-row items-center justify-center">
           <Image
             src="/resume-illustration.png"
@@ -29,7 +36,8 @@ function resume() {
             <MyServices />
           </div>
         </div>
-      </div>
+      </motion.div>
+      </AnimatePresence>
     </Layout>
   )
 }

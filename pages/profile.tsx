@@ -4,6 +4,7 @@ import ProfileSlide from '../components/ProfileSlide'
 import Layout from '../components/Layout'
 import Image from 'next/image'
 import Head from 'next/head'
+import { AnimatePresence, motion } from 'framer-motion'
 
 function Profile() {
    return (
@@ -11,7 +12,13 @@ function Profile() {
       <Head>
         <title>Profile &mdash; jauharnotes</title>
       </Head>
-      <div className="mt-14 flex flex-wrap items-center gap-8 md:mx-20 md:justify-center md:gap-0 lg:mx-0 lg:ml-14 lg:flex-nowrap lg:justify-around">
+      <AnimatePresence exitBeforeEnter>
+      <motion.div
+         animate={{ opacity: 1 }}
+         initial={{ opacity: 0 }}
+         exit={{ opacity: 0 }}
+         transition={{ duration: 0.5 }}
+        className="mt-14 flex flex-wrap items-center gap-8 md:mx-20 md:justify-center md:gap-0 lg:mx-0 lg:ml-14 lg:flex-nowrap lg:justify-around">
         <div>
           <Image
             src="/developer.svg"
@@ -29,7 +36,8 @@ function Profile() {
         <div className="flex md:w-[700px] md:justify-center lg:w-auto">
           <ProfileSlide />
         </div>
-      </div>
+      </motion.div>
+      </AnimatePresence>
     </Layout>
   )
 }
