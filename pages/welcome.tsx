@@ -27,8 +27,8 @@ function Welcome() {
           />
         </div>
         <div className="hidden space-y-24 lg:inline-block my-auto">
-          <p className="vertical-lr">Tech Enthusiast</p>
-          <hr className="vertical-lr border-[0.1px] h-[200px] mx-auto" />
+          <p className="vertical-lr text-center">Tech Enthusiast</p>
+          <hr className="vertical-lr border-[0.1px] h-[200px] ml-3" />
         </div>
         <div className="h-auto w-[900px] flex-col items-start space-y-9 text-center sm:text-center lg:text-left">
           <h2 className="text-2xl font-bold text-[#3C2344]">Hello, I&apos;am</h2>

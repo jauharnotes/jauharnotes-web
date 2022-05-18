@@ -27,11 +27,11 @@ function Profile() {
             height={460}
           />
         </div>
-        <div className="hidden space-y-24 mx-14 lg:inline-block">
-          <div className="hover:text-base hover:underline hover:underline-offset-4">
-           <p className='vertical-lr'> always try to learn</p>
-          </div>
-          <hr className="vertical-lr border-[0.1px] h-[200px] mx-auto" />
+        <div className="hidden lg:inline-block">
+         <div className='flex-col items-center space-y-24 px-10'>
+         <p className='vertical-lr text-center'> always try to learn</p>
+          <hr className="vertical-lr border-[0.1px] h-[200px] ml-3" />
+         </div>
         </div>
         <div className="flex md:w-[700px] md:justify-center lg:w-auto">
           <ProfileSlide />
