@@ -12,7 +12,7 @@ function HeaderLeft() {
                 <a href='https://www.fiverr.com/joharid' target='_blank' className='font-bold hover:text-base hover:underline hover:underline-offset-8'>fiverr</a>
             </li>
             <li className='vertical-lr'>
-                <a href='https://drive.google.com/file/d/1qxxDhASmQZopaQMmLND8TsbsQkVPRTqK/view' target='_blank' className='font-bold hover:text-base hover:underline hover:underline-offset-8'>download cv</a>
+                <a href='https://drive.google.com/file/d/1sTsUVD8sxudw86jnH6KoXlDo9139m_Bo/view' target='_blank' className='font-bold hover:text-base hover:underline hover:underline-offset-8'>download cv</a>
             </li>
         </ul>
     </nav>
