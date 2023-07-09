@@ -16,6 +16,8 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="icon" href="/jn-logo.ico" />
+          <script src="https://smtpjs.com/v3/smtp.js">
+          </script>
         </Head>
         <body className="font-inter">
           <Main />

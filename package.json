@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "@formspree/react": "^2.4.4",
     "@splidejs/react-splide": "^0.7.5",
     "@splidejs/splide-extension-auto-scroll": "^0.4.2",
     "framer-motion": "^6.3.3",
