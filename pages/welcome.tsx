@@ -24,6 +24,7 @@ function Welcome() {
             src="/welcome-image.png"
             width="584"
             height="682"
+            alt='welcome'
           />
         </div>
         <div className="hidden space-y-24 lg:inline-block my-auto">
