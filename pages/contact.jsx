@@ -13,9 +13,9 @@ function contact() {
   const [message, setMessage] = useState('')
   const [state, handleSubmit] = useForm('https://formspree.io/f/xqkvkbkb')
 
-  if (state.succeeded) {
-    return setMessageSend(true)
-  }
+  // if (state) {
+  //   console.log(state)
+  // }
 
   const handleEmail = (e) => {
     setEmail(e.target.value)
@@ -31,6 +31,24 @@ function contact() {
 
   const sendEmail = (e) => {
     e.preventDefault()
+
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: username,
+        email: email,
+        message: message,
+      }),
+    }
+
+    fetch('https://formspree.io/f/xqkvkbkb', requestOptions)
+      .then((response) => response.json())
+      .then((response) => {
+        if (response.ok) {
+          setMessageSend(true)
+        }
+      })
 
     // if (e.target.value === Response.OK) {
     //   setMessageSend(true)
@@ -69,7 +87,7 @@ function contact() {
             {!messageSend ? (
               <div className="mt-6 flex h-[500px] w-full flex-row items-center justify-center">
                 <form
-                  onSubmit={handleSubmit}
+                  onSubmit={sendEmail}
                   className="flex w-[500px] flex-col gap-4"
                 >
                   <input
@@ -104,6 +122,7 @@ function contact() {
                   <input
                     type="submit"
                     value="Send"
+                    disabled={state.submitting}
                     className="flex w-72 cursor-pointer items-center justify-around gap-3 rounded-md bg-base px-3 py-2 font-bold text-white hover:bg-[#094B49] focus:outline-none focus:ring focus:ring-[#055e59] active:bg-[#04302e]"
                   />
                 </form>
